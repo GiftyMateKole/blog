@@ -1,0 +1,29 @@
+FORMAT: 1A
+HOST: http://127.0.0.1:8000/api
+
+# Blog API
+
+This API provides access to the **Blog** service.
+
+# Group Blog Posts
+
+## Posts [GET /post]
+
++ Response 200 (application/json)
+
+    + Body
+    
+            [
+                {
+                    "id": 1,
+                    "title": "foo title",
+                    "description": "bar body",
+                    "author": "Me",
+                    "category": 3,
+                    "picture": "https://lorempixel.com/640/480/?73354",
+                    "likes": 0,
+                    "dislikes": 1,
+                    "created_at": "2018-08-01 14:40:42",
+                    "updated_at": "2018-08-01 14:40:42"
+                }
+            ]
